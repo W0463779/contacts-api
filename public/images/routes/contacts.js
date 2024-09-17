@@ -38,5 +38,12 @@ router.put('/update/:id', (req, res) => {
 router.delete('/delete/:id', (req, res) => {
     const id = req.params.id;
     res.send('Contact deleted: ' + id);
+
+
+// default route for contacts
+router.get('/', (req, res) => {
+    res.send('Contacts route');
+})
 });
 
+// export default router;
